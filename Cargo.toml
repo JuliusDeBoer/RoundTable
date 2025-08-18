@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/app",
+    "crates/app/src-tauri",
+    "crates/components",
+    "crates/web",
+]
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = "abort"
