@@ -16,7 +16,7 @@ pub fn App() -> impl IntoView {
     let (is_pressed, set_is_pressed) = signal(false);
 
     let on_down = move |e: MouseEvent| {
-        set_pos_mod.set((0, 0));
+        set_pos_mod.set((e.screen_x(), e.screen_y()));
         set_start_pos.set((e.screen_x(), e.screen_y()));
         set_is_pressed.set(true);
     };
