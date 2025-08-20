@@ -1,5 +1,14 @@
 .container-7b3b21e {
     width: 100%;
     min-height: 100vh;
-    background: tomato;
+
+    background: #222;
+}
+
+.board-7b3b21e {
+    width: 450px;
+    min-height: 320px;
+    background: palegreen;
+
+    position: absolute;
 }
