@@ -1,6 +1,6 @@
-mod app;
+mod components;
 
-use app::*;
+use components::app::*;
 use leptos::prelude::*;
 
 fn main() {

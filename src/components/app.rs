@@ -1,7 +1,6 @@
-use leptos::task::spawn_local;
-use leptos::{ev::SubmitEvent, prelude::*};
-use serde::{Deserialize, Serialize};
+use leptos::prelude::*;
 use wasm_bindgen::prelude::*;
+stylance::import_style!(style, "app.module.css");
 
 #[wasm_bindgen]
 extern "C" {
@@ -12,7 +11,7 @@ extern "C" {
 #[component]
 pub fn App() -> impl IntoView {
     view! {
-        <main class="container">
+        <main class=style::container>
             <h1>"Hello, World!"</h1>
         </main>
     }

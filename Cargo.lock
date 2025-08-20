@@ -3619,6 +3619,7 @@ dependencies = [
  "leptos",
  "serde",
  "serde-wasm-bindgen",
+ "stylance",
  "wasm-bindgen",
  "wasm-bindgen-futures",
 ]
@@ -4186,6 +4187,41 @@ name = "strsim"
 version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
+
+[[package]]
+name = "stylance"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1cd350fe5248ec97a4b0bab513bc5471f9347c384dd584c73d311b6080a0e837"
+dependencies = [
+ "stylance-macros",
+]
+
+[[package]]
+name = "stylance-core"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f8f7f2a25d8f5f352b493f609d729d3c61c7ab6e0c7659284b2b90e323dfb40"
+dependencies = [
+ "anyhow",
+ "serde",
+ "siphasher 1.0.1",
+ "toml 0.8.23",
+ "winnow 0.5.40",
+]
+
+[[package]]
+name = "stylance-macros"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c367094627aa904e2f05c37987fbe9c9daf5d1e7b18276a9f564b7cee43c963f"
+dependencies = [
+ "anyhow",
+ "proc-macro2",
+ "quote",
+ "stylance-core",
+ "syn 2.0.106",
+]
 
 [[package]]
 name = "swift-rs"
@@ -4831,6 +4867,7 @@ dependencies = [
  "serde",
  "serde_spanned 0.6.9",
  "toml_datetime 0.6.11",
+ "toml_write",
  "winnow 0.7.12",
 ]
 
@@ -4842,6 +4879,12 @@ checksum = "b551886f449aa90d4fe2bdaa9f4a2577ad2dde302c61ecf262d80b116db95c10"
 dependencies = [
  "winnow 0.7.12",
 ]
+
+[[package]]
+name = "toml_write"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5d99f8c9a7727884afe522e9bd5edbfc91a3312b36a77b5fb8926e4c31a41801"
 
 [[package]]
 name = "toml_writer"

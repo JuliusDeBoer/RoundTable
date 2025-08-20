@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "identifier": "com.roundtable.app",
   "build": {
-    "beforeDevCommand": "trunk serve",
+    "beforeDevCommand": "touch ./style.css && trunk serve",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "trunk build",
+    "beforeBuildCommand": "touch ./style.css && trunk build",
     "frontendDist": "../dist"
   },
   "app": {
